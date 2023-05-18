@@ -6,8 +6,9 @@ import CTA from "../../components/CTA.astro"
 
 export async function getStaticPaths() {
     return [
-        {params: {area: "loughborough"}, props: {area: "Loughborough", about: ""}},
-
+    {params: {area: "coalville"}, props: {area: "Coalville", about: "Coalville is a town located in the north-west of Leicestershire, close to the border with Nottinghamshire. Historically known for its coal mining industry, Coalville has transformed into a vibrant town with a range of amenities, including shops, restaurants, and leisure facilities. The town is surrounded by beautiful countryside, such as the nearby National Forest, offering opportunities for outdoor activities and walks."}},
+    {params: {area: "ashby-de-la-zouch"}, props: {area: "Ashby-de-la-Zouch", about: "Ashby-de-la-Zouch is a historic market town located in the northwest of Leicestershire. It is known for its medieval castle, charming streets, and traditional market. Ashby-de-la-Zouch offers a range of amenities, including independent shops, cafes, and restaurants. The town is surrounded by picturesque countryside, with attractions such as the National Forest and Calke Abbey nearby, providing opportunities for outdoor exploration and leisure activities."}},
+    {params: {area: "melton-mowbray"}, props: {area: "Melton Mowbray", about: "Melton Mowbray is a market town located in the northeast of Leicestershire. It is famous for its culinary delights, particularly pork pies and Stilton cheese. Melton Mowbray has a rich history and offers a range of amenities, including shops, traditional pubs, and cultural attractions. The town is surrounded by beautiful rural landscapes, including the nearby Belvoir Castle and Rutland Water, providing opportunities for outdoor activities and scenic walks."}}
     ]
 }
 
