@@ -1,9 +1,8 @@
 ---
 import ServiceLayout from "../layouts/ServiceLayout.astro"
 
-const city = ""
-// const areas = import.meta.env.AREAS.split(", ")
-const areas = []
+const city = import.meta.env.PUBLIC_CITY
+const areas = import.meta.env.PUBLIC_AREAS.split(", ")
 
 const title = `Mobile Tyre Fitting In ${city}`
 const description = `Change your tyres at home with our mobile tyre fitting service. We cover ${city} and surrounding areas. Call us today for a quote.`

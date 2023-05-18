@@ -1,6 +1,4 @@
 ---
-const city = ""
-
 import Layout from "../layouts/Layout.astro"
 import Hero from "../components/Hero.astro"
 import Services from "../components/Services.astro"
@@ -9,6 +7,7 @@ import CTA from "../components/CTA.astro"
 const heading = "Expert Tyre Service at Your Doorstep"
 const tagline = "We come to you at home, work or roadside"
 const bgImg = "url(/img/mobile-tyre-fitting-van.jpg)"
+const city = import.meta.env.PUBLIC_CITY
 ---
 
 <Layout description=`Do you need new car tyres fitted at home in ${city}? ${city} Mobile Tyres provide a convenient mobile tyre replacement service at your doorstep. Contact us today for a quote.` title={`Home - Mobile Tyres ${city}`} index={true}>
